@@ -1,4 +1,5 @@
 import { Container } from '@/components/ui/Container'
+import { Reveal } from '@/components/ui/Reveal'
 
 interface Testimonial {
   quote: string
@@ -40,7 +41,7 @@ export function Testimonials() {
     <section className="bg-white py-24 lg:py-32">
       <Container>
         {/* Section header */}
-        <div className="mb-16 flex flex-col items-center text-center">
+        <Reveal className="mb-16 flex flex-col items-center text-center">
           <div className="mb-5 flex items-center gap-4">
             <span className="h-px w-10 bg-black" aria-hidden="true" />
             <span className="font-body text-xs font-medium uppercase tracking-[0.2em]">
@@ -51,10 +52,10 @@ export function Testimonials() {
           <h2 className="font-display text-4xl font-bold uppercase leading-[0.92] tracking-tight lg:text-5xl">
             What Our Clients Say.
           </h2>
-        </div>
+        </Reveal>
 
         {/* Testimonials grid */}
-        <div className="grid grid-cols-1 gap-px bg-black/8 md:grid-cols-3">
+        <Reveal stagger className="grid grid-cols-1 gap-px bg-black/8 md:grid-cols-3">
           {testimonials.map((t) => (
             <figure
               key={t.author + t.role}
@@ -91,7 +92,7 @@ export function Testimonials() {
               </figcaption>
             </figure>
           ))}
-        </div>
+        </Reveal>
       </Container>
     </section>
   )

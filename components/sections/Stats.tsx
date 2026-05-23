@@ -1,4 +1,5 @@
 import { Container } from '@/components/ui/Container'
+import { Reveal } from '@/components/ui/Reveal'
 
 const stats = [
   { number: '200+', label: 'Clients Served' },
@@ -14,7 +15,7 @@ export function Stats() {
       aria-label="Company statistics"
     >
       <Container>
-        <dl className="grid grid-cols-2 gap-y-12 lg:grid-cols-4">
+        <Reveal stagger as="dl" className="grid grid-cols-2 gap-y-12 lg:grid-cols-4">
           {stats.map((stat) => (
             /*
              * flex-col-reverse: DOM order is dt (label) → dd (number),
@@ -32,7 +33,7 @@ export function Stats() {
               </dd>
             </div>
           ))}
-        </dl>
+        </Reveal>
       </Container>
     </section>
   )

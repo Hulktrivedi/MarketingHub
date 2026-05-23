@@ -1,5 +1,6 @@
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
+import { Reveal } from '@/components/ui/Reveal'
 
 interface Project {
   category: string
@@ -53,7 +54,7 @@ export function Portfolio({ showHeader = true }: { showHeader?: boolean }) {
       <Container>
         {/* Section header */}
         {showHeader && (
-          <div className="mb-16 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+          <Reveal className="mb-16 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <div className="mb-5 flex items-center gap-4">
                 <span className="h-px w-10 bg-accent" aria-hidden="true" />
@@ -69,13 +70,18 @@ export function Portfolio({ showHeader = true }: { showHeader?: boolean }) {
             </div>
             <Button href="/portfolio" variant="ghost" size="md">
               View All Work
-              <span aria-hidden="true">→</span>
+              <span
+                aria-hidden="true"
+                className="transition-transform duration-300 ease-out group-hover:translate-x-1"
+              >
+                →
+              </span>
             </Button>
-          </div>
+          </Reveal>
         )}
 
         {/* Projects grid */}
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <Reveal stagger className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, i) => (
             <article
               key={`${project.category}-${i}`}
@@ -122,7 +128,7 @@ export function Portfolio({ showHeader = true }: { showHeader?: boolean }) {
               </div>
             </article>
           ))}
-        </div>
+        </Reveal>
       </Container>
     </section>
   )

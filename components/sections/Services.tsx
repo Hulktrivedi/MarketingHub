@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Container } from '@/components/ui/Container'
+import { Reveal } from '@/components/ui/Reveal'
 import type { ReactNode } from 'react'
 
 interface Service {
@@ -152,7 +153,7 @@ export function Services({ showHeader = true }: { showHeader?: boolean }) {
       <Container>
         {/* Section header */}
         {showHeader && (
-          <div className="mb-16 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <Reveal className="mb-16 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <div className="mb-5 flex items-center gap-4">
                 <span className="h-px w-10 bg-black" aria-hidden="true" />
@@ -170,21 +171,24 @@ export function Services({ showHeader = true }: { showHeader?: boolean }) {
               Comprehensive marketing solutions built for modern businesses.
               Strategy, execution, and measurable results — all under one roof.
             </p>
-          </div>
+          </Reveal>
         )}
 
         {/* Grid with 1px divider pattern */}
-        <div className="grid grid-cols-1 gap-px bg-black/10 sm:grid-cols-2 lg:grid-cols-3">
+        <Reveal
+          stagger
+          className="grid grid-cols-1 gap-px bg-black/10 sm:grid-cols-2 lg:grid-cols-3"
+        >
           {services.map((service) => (
             <article
               key={service.title}
-              className="group bg-gray-100 p-8 transition-colors duration-200 hover:bg-white"
+              className="group bg-gray-100 p-8 transition-colors duration-300 ease-out hover:bg-white"
             >
               <span className="font-body text-xs font-medium text-black/25">
                 {service.index}
               </span>
 
-              <div className="mb-5 mt-6 flex h-11 w-11 items-center justify-center bg-black text-white transition-colors duration-200 group-hover:bg-accent group-hover:text-black">
+              <div className="mb-5 mt-6 flex h-11 w-11 items-center justify-center bg-black text-white transition-[colors,transform] duration-300 ease-out group-hover:scale-110 group-hover:bg-accent group-hover:text-black">
                 {service.icon}
               </div>
 
@@ -198,15 +202,20 @@ export function Services({ showHeader = true }: { showHeader?: boolean }) {
 
               <Link
                 href="/services"
-                className="mt-6 inline-flex items-center gap-2 font-body text-xs font-medium uppercase tracking-wide transition-colors duration-200 hover:text-accent"
+                className="group/link mt-6 inline-flex items-center gap-2 font-body text-xs font-medium uppercase tracking-wide transition-colors duration-300 ease-out hover:text-accent"
                 aria-label={`Learn more about ${service.title}`}
               >
                 Learn More
-                <span aria-hidden="true">→</span>
+                <span
+                  aria-hidden="true"
+                  className="transition-transform duration-300 ease-out group-hover/link:translate-x-1"
+                >
+                  →
+                </span>
               </Link>
             </article>
           ))}
-        </div>
+        </Reveal>
       </Container>
     </section>
   )

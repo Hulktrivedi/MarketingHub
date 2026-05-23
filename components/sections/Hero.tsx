@@ -62,7 +62,12 @@ export function Hero() {
             </Button>
             <Button href="/portfolio" variant="ghost" size="lg">
               View Our Work
-              <span aria-hidden="true">→</span>
+              <span
+                aria-hidden="true"
+                className="transition-transform duration-300 ease-out group-hover:translate-x-1"
+              >
+                →
+              </span>
             </Button>
           </div>
         </div>

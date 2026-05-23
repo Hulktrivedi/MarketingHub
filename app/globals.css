@@ -147,3 +147,41 @@ body {
     transform: none;
   }
 }
+
+/* Scroll-reveal stagger — children animate in with cascading delay.
+   The [data-revealed] attribute is toggled by the Reveal component via
+   IntersectionObserver. The @media guard keeps reduced-motion users safe. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(1.5rem);
+    transition:
+      opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal-stagger[data-revealed] > * {
+    opacity: 1;
+    transform: none;
+  }
+
+  .reveal-stagger[data-revealed] > *:nth-child(2) {
+    transition-delay: 70ms;
+  }
+
+  .reveal-stagger[data-revealed] > *:nth-child(3) {
+    transition-delay: 140ms;
+  }
+
+  .reveal-stagger[data-revealed] > *:nth-child(4) {
+    transition-delay: 210ms;
+  }
+
+  .reveal-stagger[data-revealed] > *:nth-child(5) {
+    transition-delay: 280ms;
+  }
+
+  .reveal-stagger[data-revealed] > *:nth-child(6) {
+    transition-delay: 350ms;
+  }
+}
