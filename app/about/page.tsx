@@ -63,7 +63,7 @@ export default function AboutPage() {
       />
 
       {/* Mission statement */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-32 lg:py-44">
         <Container>
           <div className="max-w-4xl">
             <div className="mb-8 flex items-center gap-4">
@@ -96,7 +96,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="bg-black py-24 lg:py-32">
+      <section className="bg-black py-32 lg:py-44">
         <Container>
           <div className="mb-16">
             <div className="mb-5 flex items-center gap-4">
@@ -129,7 +129,7 @@ export default function AboutPage() {
       <Stats />
 
       {/* Team */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-32 lg:py-44">
         <Container>
           <div className="mb-16 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div>

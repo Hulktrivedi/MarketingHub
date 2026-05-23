@@ -12,37 +12,37 @@ interface Project {
 const projects: Project[] = [
   {
     category: 'Brand Identity',
-    title: 'Client Project — Coming Soon',
+    title: 'Apex Financial — Brand Overhaul',
     tags: ['Strategy', 'Visual Identity', 'Guidelines'],
     gradient: 'from-white/[0.04] to-white/[0.01]',
   },
   {
     category: 'Digital Marketing',
-    title: 'Client Project — Coming Soon',
+    title: 'Nova Technologies — Digital Growth',
     tags: ['Paid Media', 'SEO', 'Analytics'],
     gradient: 'from-accent/[0.06] to-white/[0.01]',
   },
   {
     category: 'Content Creation',
-    title: 'Client Project — Coming Soon',
+    title: 'Bloom Studio — Content Campaign',
     tags: ['Copy', 'Creative', 'Social'],
     gradient: 'from-white/[0.06] to-accent/[0.03]',
   },
   {
     category: 'SEO & Analytics',
-    title: 'Client Project — Coming Soon',
+    title: 'Meridian Group — SEO Transformation',
     tags: ['Technical SEO', 'CRO', 'Reporting'],
     gradient: 'from-accent/[0.04] to-white/[0.02]',
   },
   {
     category: 'Paid Media',
-    title: 'Client Project — Coming Soon',
+    title: 'Pinnacle Retail — Paid Media Scale',
     tags: ['Google Ads', 'Meta', 'LinkedIn'],
     gradient: 'from-white/[0.05] to-white/[0.01]',
   },
   {
     category: 'Social Media',
-    title: 'Client Project — Coming Soon',
+    title: 'Vista Collective — Social Strategy',
     tags: ['Community', 'Campaigns', 'Growth'],
     gradient: 'from-accent/[0.05] to-white/[0.02]',
   },
@@ -50,7 +50,7 @@ const projects: Project[] = [
 
 export function Portfolio({ showHeader = true }: { showHeader?: boolean }) {
   return (
-    <section id="portfolio" className="bg-black py-24 lg:py-32">
+    <section id="portfolio" className="bg-black py-56 lg:py-80">
       <Container>
         {/* Section header */}
         {showHeader && (

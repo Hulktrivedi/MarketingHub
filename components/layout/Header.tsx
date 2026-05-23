@@ -81,7 +81,7 @@ export function Header() {
           <Link
             href="/contact"
             className={clsx(
-              'px-6 py-3 font-body text-sm font-medium uppercase tracking-wide transition-all duration-300',
+              'rounded px-6 py-3 font-body text-sm font-medium uppercase tracking-wide transition-all duration-300',
               isDark
                 ? 'border border-white/30 text-white hover:border-white hover:bg-white hover:text-black'
                 : 'bg-black text-white hover:bg-accent hover:text-black'
@@ -158,7 +158,7 @@ export function Header() {
           </nav>
           <Link
             href="/contact"
-            className="mt-6 block bg-black px-6 py-3 text-center font-body text-sm font-medium uppercase tracking-wide text-white transition-all hover:bg-accent hover:text-black"
+            className="mt-6 block rounded bg-black px-6 py-3 text-center font-body text-sm font-medium uppercase tracking-wide text-white transition-all hover:bg-accent hover:text-black"
             onClick={closeMobileMenu}
           >
             Get Started

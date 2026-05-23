@@ -20,7 +20,7 @@ const sizes: Record<Size, string> = {
 }
 
 const base =
-  'group inline-flex cursor-pointer select-none items-center justify-center gap-2 font-body font-medium uppercase tracking-wide transition-all duration-300 ease-out active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent whitespace-nowrap disabled:pointer-events-none disabled:opacity-50'
+  'group inline-flex cursor-pointer select-none items-center justify-center gap-2 rounded font-body font-medium uppercase tracking-wide transition-all duration-300 ease-out active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent whitespace-nowrap disabled:pointer-events-none disabled:opacity-50'
 
 interface SharedProps {
   variant?: Variant

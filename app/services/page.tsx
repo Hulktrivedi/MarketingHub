@@ -61,7 +61,7 @@ export default function ServicesPage() {
       <Services showHeader={false} />
 
       {/* Process section */}
-      <section className="bg-black py-24 lg:py-32">
+      <section className="bg-black py-32 lg:py-44">
         <Container>
           <div className="mb-16">
             <div className="mb-5 flex items-center gap-4">

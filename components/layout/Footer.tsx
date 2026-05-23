@@ -95,8 +95,8 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-black text-white">
-      <div className="mx-auto max-w-[1400px] px-6 py-16 lg:px-8">
+    <footer className="bg-charcoal text-white">
+      <div className="mx-auto max-w-[1400px] px-6 py-36 lg:py-52 lg:px-8">
         {/* Main grid */}
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}

@@ -149,7 +149,7 @@ const services: Service[] = [
 
 export function Services({ showHeader = true }: { showHeader?: boolean }) {
   return (
-    <section id="services" className="bg-gray-100 py-24 lg:py-32">
+    <section id="services" className="bg-gray-100 py-32 lg:py-44">
       <Container>
         {/* Section header */}
         {showHeader && (
@@ -182,8 +182,13 @@ export function Services({ showHeader = true }: { showHeader?: boolean }) {
           {services.map((service) => (
             <article
               key={service.title}
-              className="group bg-gray-100 p-8 transition-colors duration-300 ease-out hover:bg-white"
+              className="group relative bg-gray-100 p-8 transition-colors duration-300 ease-out hover:bg-white"
             >
+              {/* Accent bar — draws in from left on hover */}
+              <div
+                className="absolute inset-x-0 top-0 h-0.5 origin-left scale-x-0 bg-accent transition-transform duration-500 ease-out group-hover:scale-x-100"
+                aria-hidden="true"
+              />
               <span className="font-body text-xs font-medium text-black/25">
                 {service.index}
               </span>

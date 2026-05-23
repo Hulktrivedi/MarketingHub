@@ -51,7 +51,7 @@ export default function ContactPage() {
         subtitle="Ready to elevate your brand? Tell us about your project and our team will craft a strategy built to dominate your market."
       />
 
-      <section className="bg-black py-24 lg:py-32">
+      <section className="bg-black py-56 lg:py-80">
         <Container>
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr_2fr] lg:gap-24">
             {/* Left — Contact info */}

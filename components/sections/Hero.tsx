@@ -7,13 +7,21 @@ export function Hero() {
       className="relative flex min-h-[100svh] items-center bg-black"
       aria-label="Hero"
     >
-      {/* Ambient glow */}
+      {/* Ambient glows */}
       <div
         className="pointer-events-none absolute inset-0 select-none"
         aria-hidden="true"
         style={{
           background:
             'radial-gradient(ellipse 80% 60% at 8% 55%, rgba(255,188,125,0.09) 0%, transparent 65%)',
+        }}
+      />
+      <div
+        className="pointer-events-none absolute inset-0 select-none"
+        aria-hidden="true"
+        style={{
+          background:
+            'radial-gradient(ellipse 50% 40% at 90% 10%, rgba(255,188,125,0.05) 0%, transparent 60%)',
         }}
       />
 
@@ -80,10 +88,12 @@ export function Hero() {
         aria-hidden="true"
       >
         <div className="flex flex-col items-center gap-3">
+          <div className="flex h-9 w-5 items-start justify-center rounded-full border border-white/20 p-1.5">
+            <div className="animate-bounce-subtle h-1.5 w-0.5 rounded-full bg-white/45" />
+          </div>
           <span className="font-body text-[10px] uppercase tracking-[0.25em] text-white/20">
             Scroll
           </span>
-          <div className="h-10 w-px animate-pulse-slow bg-gradient-to-b from-white/30 to-transparent" />
         </div>
       </div>
     </section>

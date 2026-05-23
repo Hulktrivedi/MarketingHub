@@ -45,7 +45,7 @@ export default function PortfolioPage() {
       <Portfolio showHeader={false} />
 
       {/* Client logos */}
-      <section className="bg-black py-20">
+      <section className="bg-charcoal py-24">
         <Container>
           <div className="mb-12 text-center">
             <span className="font-body text-xs font-medium uppercase tracking-[0.2em] text-white/30">
@@ -57,7 +57,7 @@ export default function PortfolioPage() {
             {clients.map((client, i) => (
               <div
                 key={i}
-                className="flex aspect-[2/1] items-center justify-center bg-black px-4"
+                className="flex aspect-[2/1] items-center justify-center bg-charcoal px-4"
                 aria-label={`${client} — placeholder`}
               >
                 <span className="font-display text-xs font-bold uppercase tracking-wide text-white/15">

@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
 
 export function Testimonials() {
   return (
-    <section className="bg-white py-24 lg:py-32">
+    <section className="bg-white py-56 lg:py-80">
       <Container>
         {/* Section header */}
         <Reveal className="mb-16 flex flex-col items-center text-center">
@@ -59,8 +59,31 @@ export function Testimonials() {
           {testimonials.map((t) => (
             <figure
               key={t.author + t.role}
-              className="bg-white p-8 lg:p-10"
+              className="group relative bg-white p-8 lg:p-10"
             >
+              {/* Accent bar — draws in from left on hover */}
+              <div
+                className="absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-accent transition-transform duration-500 ease-out group-hover:scale-x-100"
+                aria-hidden="true"
+              />
+
+              {/* Star rating */}
+              <div className="mb-5 flex gap-1" aria-label="5 out of 5 stars">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <svg
+                    key={i}
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="text-accent"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                ))}
+              </div>
+
               <span
                 className="font-display text-5xl font-bold leading-none text-accent"
                 aria-hidden="true"

@@ -26,8 +26,17 @@ export function CTABlock() {
   }
 
   return (
-    <section id="contact" className="bg-black py-24 lg:py-32">
-      <Container>
+    <section id="contact" className="relative bg-black py-56 lg:py-80">
+      {/* Ambient glow */}
+      <div
+        className="pointer-events-none absolute inset-0 select-none"
+        aria-hidden="true"
+        style={{
+          background:
+            'radial-gradient(ellipse 55% 60% at 10% 60%, rgba(255,188,125,0.07) 0%, transparent 60%)',
+        }}
+      />
+      <Container className="relative z-10">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
           {/* Left — CTA copy */}
           <div className="flex flex-col justify-center">
@@ -50,6 +59,36 @@ export function CTABlock() {
               Let&apos;s talk about your goals. Our team is ready to build a
               strategy that puts your brand ahead of the competition.
             </p>
+
+            <ul className="mt-8 space-y-3" aria-label="What you get">
+              {[
+                'Strategy-first, results-driven approach',
+                'Full-funnel campaign execution',
+                'Real-time reporting & full transparency',
+                'Dedicated senior account team',
+              ].map((point) => (
+                <li
+                  key={point}
+                  className="flex items-start gap-3 font-body text-sm text-white/55"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="mt-0.5 shrink-0 text-accent"
+                    aria-hidden="true"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  {point}
+                </li>
+              ))}
+            </ul>
 
             <address className="mt-10 space-y-3 not-italic">
               <a
