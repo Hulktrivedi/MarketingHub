@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/Button'
 export function Hero() {
   return (
     <section
-      className="relative flex min-h-[100svh] items-center bg-black"
+      className="relative min-h-[100svh] bg-black pb-16 pt-20 lg:pt-24"
       aria-label="Hero"
     >
       {/* Ambient glows */}
@@ -25,7 +25,7 @@ export function Hero() {
         }}
       />
 
-      <Container className="relative z-10 py-24">
+      <Container className="relative z-10">
         <div className="max-w-5xl">
           {/* Eyebrow */}
           <div
@@ -34,7 +34,7 @@ export function Hero() {
           >
             <span className="h-px w-10 bg-accent" aria-hidden="true" />
             <span className="font-body text-xs font-medium uppercase tracking-[0.2em] text-accent">
-              Full-Service Marketing Agency
+              IT Services & Digital Marketing
             </span>
           </div>
 
@@ -43,11 +43,13 @@ export function Hero() {
             className="animate-fade-up font-display text-5xl font-bold uppercase leading-[0.88] tracking-[-0.02em] text-white sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
             style={{ animationDelay: '80ms' }}
           >
-            We Build
+            Transform
             <br />
-            Brands That
+            Your Business
             <br />
-            <span className="text-accent">Dominate.</span>
+            <span className="text-accent">With Smart Digital</span>
+            <br />
+            Solutions.
           </h1>
 
           {/* Descriptor */}
@@ -55,9 +57,9 @@ export function Hero() {
             className="animate-fade-up mt-8 max-w-lg font-body text-base leading-relaxed text-white/50 md:text-lg"
             style={{ animationDelay: '160ms' }}
           >
-            Strategic marketing solutions that transform businesses into market
-            leaders. From brand strategy to full digital execution — we deliver
-            results that move the needle.
+            We help businesses grow faster with innovative technology solutions,
+            professional web development, digital marketing, and IT consulting.
+            Reliable, scalable, and built for measurable results.
           </p>
 
           {/* CTAs */}
@@ -68,8 +70,8 @@ export function Hero() {
             <Button href="/contact" variant="secondary" size="lg">
               Start Your Project
             </Button>
-            <Button href="/portfolio" variant="ghost" size="lg">
-              View Our Work
+            <Button href="/services" variant="ghost" size="lg">
+              Explore Services
               <span
                 aria-hidden="true"
                 className="transition-transform duration-300 ease-out group-hover:translate-x-1"

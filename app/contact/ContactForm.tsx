@@ -158,12 +158,16 @@ export function ContactForm() {
               <option value="" disabled>
                 Select a service…
               </option>
-              <option value="brand-strategy">Brand Strategy</option>
-              <option value="digital-marketing">Digital Marketing</option>
-              <option value="content-creation">Content Creation</option>
-              <option value="seo-analytics">SEO &amp; Analytics</option>
-              <option value="paid-media">Paid Media</option>
-              <option value="social-media">Social Media</option>
+              <option value="seo">Search Engine Optimization (SEO)</option>
+              <option value="website-development">Website Development</option>
+              <option value="app-development">App Development</option>
+              <option value="graphic-designing">Graphic Designing</option>
+              <option value="google-my-business">Google My Business</option>
+              <option value="google-meta-ads">Google &amp; Meta Ads</option>
+              <option value="social-media-management">Social Media Management</option>
+              <option value="email-marketing">Email Marketing</option>
+              <option value="video-editing">Video Editing</option>
+              <option value="content-writing">Content Writing</option>
               <option value="multiple">Multiple Services</option>
               <option value="other">Other / Not Sure</option>
             </select>

@@ -7,38 +7,50 @@ import { Container } from '@/components/ui/Container'
 export const metadata: Metadata = {
   title: 'Services',
   description:
-    'Comprehensive marketing services including brand strategy, digital marketing, content creation, SEO & analytics, paid media, and social media management.',
+    'Complete IT and digital marketing services including SEO, website development, app development, graphic design, Google My Business, paid advertising, social media management, email marketing, video editing, and content writing.',
   openGraph: {
     title: 'Services | MarketingHub',
     description:
-      'Comprehensive marketing services built for measurable growth. Strategy, execution, and results — all under one roof.',
+      'Complete technology and marketing solutions designed to help businesses grow online and improve operational efficiency.',
   },
 }
 
 const processSteps = [
   {
     number: '01',
-    title: 'Discovery',
+    title: 'Discovery & Consultation',
     description:
-      'We conduct a thorough audit of your current position, competitive landscape, and market opportunities to establish a clear strategic baseline.',
+      'We begin with a thorough consultation to understand your business goals, current challenges, and target audience — establishing a clear strategic baseline.',
   },
   {
     number: '02',
-    title: 'Strategy',
+    title: 'Strategy Planning',
     description:
       'We develop a data-driven, channel-specific roadmap precisely tailored to your goals, budget, and competitive environment.',
   },
   {
     number: '03',
-    title: 'Execution',
+    title: 'Design & Development',
     description:
-      'We implement with precision across every channel — on-brand, on-budget, and on-schedule. Every deliverable is held to the highest standard.',
+      'We execute with precision across every deliverable — on-brand, on-budget, and on-schedule. Every output is held to the highest standard.',
   },
   {
     number: '04',
-    title: 'Optimisation',
+    title: 'Testing & Quality Assurance',
     description:
-      'We measure, test, and iterate continuously — scaling what works and eliminating what doesn\'t. Your results improve every cycle.',
+      'Rigorous quality checks across all deliverables ensure everything performs flawlessly before it reaches your audience.',
+  },
+  {
+    number: '05',
+    title: 'Launch & Deployment',
+    description:
+      'We manage the full launch process — carefully deploying your solution and monitoring performance to ensure a smooth, successful go-live.',
+  },
+  {
+    number: '06',
+    title: 'Ongoing Support',
+    description:
+      'Our relationship doesn\'t end at launch. We provide continuous support, optimization, and improvement to keep your results growing.',
   },
 ]
 
@@ -49,15 +61,14 @@ export default function ServicesPage() {
         label="Our Services"
         title={
           <>
-            Comprehensive
-            <br />
-            Marketing Solutions.
+            Complete Technology
+            <br />& Marketing Solutions.
           </>
         }
-        subtitle="Every service we offer is built around a single goal: measurable growth for your business. Strategy, execution, and results — delivered at the highest level."
+        subtitle="We provide complete IT and digital marketing solutions designed to help businesses grow online, increase visibility, and improve operational efficiency."
       />
 
-      {/* Services grid — header suppressed; page hero provides the context */}
+      {/* Services grid — header suppressed; page hero provides context */}
       <Services showHeader={false} />
 
       {/* Process section */}
@@ -75,7 +86,7 @@ export default function ServicesPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 gap-px bg-white/[0.06] sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-px bg-white/[0.06] sm:grid-cols-2 lg:grid-cols-3">
             {processSteps.map((step) => (
               <div key={step.number} className="group bg-black p-8 lg:p-10">
                 <span className="font-body text-xs font-medium text-accent/50">

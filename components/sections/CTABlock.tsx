@@ -48,24 +48,25 @@ export function CTABlock() {
             </div>
 
             <h2 className="font-display text-4xl font-bold uppercase leading-[0.92] tracking-tight text-white lg:text-5xl">
-              Ready to
+              Let&apos;s Build
               <br />
-              Transform
+              Something Great
               <br />
-              Your Brand?
+              Together.
             </h2>
 
             <p className="mt-6 max-w-sm font-body text-base leading-relaxed text-white/50">
-              Let&apos;s talk about your goals. Our team is ready to build a
-              strategy that puts your brand ahead of the competition.
+              Looking for reliable IT and digital marketing solutions? Our team
+              is ready to help you achieve your digital goals with innovative
+              technology and expert guidance.
             </p>
 
             <ul className="mt-8 space-y-3" aria-label="What you get">
               {[
-                'Strategy-first, results-driven approach',
-                'Full-funnel campaign execution',
-                'Real-time reporting & full transparency',
-                'Dedicated senior account team',
+                'Professional consultation at no obligation',
+                'Customized solutions for your unique needs',
+                'Timely delivery and transparent communication',
+                'Ongoing support and continuous improvement',
               ].map((point) => (
                 <li
                   key={point}
@@ -129,7 +130,7 @@ export function CTABlock() {
                   Message Sent
                 </h3>
                 <p className="max-w-xs font-body text-sm text-white/50">
-                  Thank you. We&apos;ll be in touch within 24 hours.
+                  Thank you. We&apos;ll be in touch within one business day.
                 </p>
               </div>
             ) : (
@@ -198,7 +199,7 @@ export function CTABlock() {
                       required
                       rows={5}
                       className={`${inputClasses} resize-none`}
-                      placeholder="Tell us about your project..."
+                      placeholder="Tell us about your project…"
                     />
                   </div>
 

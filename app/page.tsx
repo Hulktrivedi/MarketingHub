@@ -13,7 +13,7 @@ const jsonLd = {
   name: 'MarketingHub',
   url: siteUrl,
   description:
-    'Full-service digital marketing agency delivering brand strategy, digital marketing, content creation, SEO, paid media, and social media solutions.',
+    'Full-service IT and digital marketing company delivering web development, SEO, app development, graphic design, paid advertising, social media management, email marketing, video editing, and content writing.',
   email: 'hello@marketinghub.com',
   telephone: '+1-123-456-7890',
   contactPoint: {
@@ -31,14 +31,18 @@ const jsonLd = {
   ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Marketing Services',
+    name: 'IT Services & Digital Marketing',
     itemListElement: [
-      'Brand Strategy',
-      'Digital Marketing',
-      'Content Creation',
-      'SEO & Analytics',
-      'Paid Media',
-      'Social Media',
+      'Search Engine Optimization',
+      'Website Development',
+      'App Development',
+      'Graphic Designing',
+      'Google My Business',
+      'Google & Meta Ads',
+      'Social Media Management',
+      'Email Marketing',
+      'Video Editing',
+      'Content Writing',
     ].map((name) => ({
       '@type': 'Offer',
       itemOffered: { '@type': 'Service', name },

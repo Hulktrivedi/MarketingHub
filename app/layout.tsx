@@ -22,19 +22,27 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://marketinghub.com'
 
 export const metadata: Metadata = {
   title: {
-    default: 'MarketingHub | World-Class Marketing Solutions',
+    default: 'MarketingHub | IT Services & Digital Marketing',
     template: '%s | MarketingHub',
   },
   description:
-    'Transform your brand with data-driven marketing strategies. MarketingHub delivers exceptional results through innovative digital solutions.',
+    'Transform your business with innovative IT services and digital marketing solutions. MarketingHub delivers web development, SEO, app development, paid advertising, social media management, and more.',
   keywords: [
-    'marketing agency',
-    'digital marketing',
-    'brand strategy',
-    'content creation',
-    'SEO',
-    'paid media',
-    'social media marketing',
+    'IT services company',
+    'digital marketing agency',
+    'website development',
+    'SEO services',
+    'app development',
+    'Google Ads',
+    'Meta Ads',
+    'social media management',
+    'email marketing',
+    'graphic design',
+    'content writing',
+    'video editing',
+    'Google My Business',
+    'business growth solutions',
+    'digital transformation',
   ],
   authors: [{ name: 'MarketingHub' }],
   creator: 'MarketingHub',
@@ -43,16 +51,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
-    title: 'MarketingHub | World-Class Marketing Solutions',
+    title: 'MarketingHub | IT Services & Digital Marketing',
     description:
-      'Transform your brand with data-driven marketing strategies that deliver exceptional results.',
+      'Transform your business with innovative IT services and digital marketing solutions that deliver exceptional, measurable results.',
     siteName: 'MarketingHub',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MarketingHub | World-Class Marketing Solutions',
+    title: 'MarketingHub | IT Services & Digital Marketing',
     description:
-      'Transform your brand with data-driven marketing strategies that deliver exceptional results.',
+      'Transform your business with innovative IT services and digital marketing solutions that deliver exceptional, measurable results.',
   },
   robots: {
     index: true,

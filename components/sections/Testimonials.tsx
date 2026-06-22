@@ -12,27 +12,43 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote:
-      'MarketingHub transformed our brand from a local business into a recognizable market leader. The results exceeded every expectation we had going in.',
-    author: 'Client Name',
-    role: 'CEO',
-    company: 'Company Name',
-    initials: 'CN',
+      'The team delivered a professional website that significantly improved our online presence and customer engagement. Outstanding work from start to finish.',
+    author: 'Client',
+    role: 'Business Owner',
+    company: 'Retail Client',
+    initials: 'RC',
   },
   {
     quote:
-      "The team's strategic approach to our digital marketing doubled our qualified leads within the first quarter. Exceptional thinking, exceptional execution.",
-    author: 'Client Name',
+      'Excellent service, clear communication, and outstanding results. Their expertise in digital marketing transformed how we connect with our audience.',
+    author: 'Client',
     role: 'Marketing Director',
-    company: 'Company Name',
-    initials: 'CN',
+    company: 'Hospitality Client',
+    initials: 'HC',
   },
   {
     quote:
-      'Working with MarketingHub is like having an entire world-class marketing department on call. Responsive, creative, and relentlessly results-focused.',
-    author: 'Client Name',
+      "Their SEO and digital marketing strategies helped us increase website traffic and generate significantly more leads. A genuinely results-focused team.",
+    author: 'Client',
+    role: 'CEO',
+    company: 'Healthcare Client',
+    initials: 'HC',
+  },
+  {
+    quote:
+      'Professional, reliable, and highly skilled. MarketingHub delivered exactly what they promised — on time and above expectations.',
+    author: 'Client',
     role: 'Founder',
-    company: 'Company Name',
-    initials: 'CN',
+    company: 'E-Commerce Client',
+    initials: 'EC',
+  },
+  {
+    quote:
+      'We saw measurable growth in our business after implementing their digital solutions. Their data-driven approach makes a real, tangible difference.',
+    author: 'Client',
+    role: 'Managing Director',
+    company: 'Professional Services Client',
+    initials: 'PS',
   },
 ]
 
@@ -56,9 +72,9 @@ export function Testimonials() {
 
         {/* Testimonials grid */}
         <Reveal stagger className="grid grid-cols-1 gap-px bg-black/8 md:grid-cols-3">
-          {testimonials.map((t) => (
+          {testimonials.map((t, i) => (
             <figure
-              key={t.author + t.role}
+              key={i}
               className="group relative bg-white p-8 lg:p-10"
             >
               {/* Accent bar — draws in from left on hover */}
@@ -69,9 +85,9 @@ export function Testimonials() {
 
               {/* Star rating */}
               <div className="mb-5 flex gap-1" aria-label="5 out of 5 stars">
-                {Array.from({ length: 5 }).map((_, i) => (
+                {Array.from({ length: 5 }).map((_, j) => (
                   <svg
-                    key={i}
+                    key={j}
                     width="14"
                     height="14"
                     viewBox="0 0 24 24"

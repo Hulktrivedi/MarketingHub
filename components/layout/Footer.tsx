@@ -3,17 +3,17 @@ import { NewsletterForm } from '@/components/layout/NewsletterForm'
 
 const footerLinks = {
   services: [
-    { name: 'Digital Marketing', href: '/services/digital-marketing' },
-    { name: 'Brand Strategy', href: '/services/brand-strategy' },
-    { name: 'Content Creation', href: '/services/content-creation' },
-    { name: 'SEO & Analytics', href: '/services/seo-analytics' },
-    { name: 'Paid Media', href: '/services/paid-media' },
-    { name: 'Social Media', href: '/services/social-media' },
+    { name: 'SEO', href: '/services/seo' },
+    { name: 'Website Development', href: '/services/website-development' },
+    { name: 'App Development', href: '/services/app-development' },
+    { name: 'Google & Meta Ads', href: '/services/google-meta-ads' },
+    { name: 'Social Media Management', href: '/services/social-media-management' },
+    { name: 'Email Marketing', href: '/services/email-marketing' },
   ],
   company: [
     { name: 'About Us', href: '/about' },
+    { name: 'Services', href: '/services' },
     { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/contact' },
   ],
   legal: [
@@ -109,8 +109,9 @@ export function Footer() {
               MarketingHub
             </Link>
             <p className="mt-4 font-body text-sm leading-relaxed text-white/45">
-              Transform your brand with data-driven marketing strategies that
-              deliver exceptional, measurable results.
+              Transform your business with innovative technology solutions and
+              digital marketing strategies that deliver exceptional, measurable
+              results.
             </p>
 
             {/* Social */}
@@ -146,6 +147,14 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/services"
+                  className="font-body text-sm text-accent/70 transition-colors hover:text-accent"
+                >
+                  View All Services →
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -174,7 +183,8 @@ export function Footer() {
               Stay Updated
             </h3>
             <p className="mt-5 font-body text-sm leading-relaxed text-white/45">
-              Marketing insights and industry news — delivered to your inbox.
+              Technology insights and digital marketing tips — delivered to your
+              inbox.
             </p>
             <NewsletterForm />
           </div>
